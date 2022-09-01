@@ -23,6 +23,7 @@ generatecrit.addEventListener("click", function(){
 var passwordresult = document.getElementById('password');
 var passwordlength = document.getElementById('length');
 var uppercaseDOM = document.getElementById('uppercase');
+var lowercaseDOM = document.getElementById('lowercase');
 var numbersDOM = document.getElementById('numbers');
 var symbolsDOM = document.getElementById('symbols');
 var generatebtn = document.getElementById('generate');
@@ -30,14 +31,22 @@ var generatebtn = document.getElementById('generate');
 
 // Password Generating Function
 function genPassword () {
-  let chars = "abcdefghijklmnopqrstuvwxyz";
-  if (numbersDOM.checked == true && symbolsDOM.checked == false && uppercaseDOM.checked == false) chars = "0123456789";
-  if (numbersDOM.checked == true && symbolsDOM.checked == true && uppercaseDOM.checked == false) chars = "0123456789!@#$%^&*()";
-  if (numbersDOM.checked == true && symbolsDOM.checked == false && uppercaseDOM.checked == true) chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  if (numbersDOM.checked == true && symbolsDOM.checked == true && uppercaseDOM.checked == true) chars = "0123456789!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  if (numbersDOM.checked == false && symbolsDOM.checked == true && uppercaseDOM.checked == true) chars = "!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  if (numbersDOM.checked == false && symbolsDOM.checked == true && uppercaseDOM.checked == false) chars = "!@#$%^&*()";
-  if (numbersDOM.checked == false && symbolsDOM.checked == false && uppercaseDOM.checked == true) chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let chars = "null";
+  if (numbersDOM.checked == true && symbolsDOM.checked == false && uppercaseDOM.checked == false && lowercaseDOM.checked == false) chars = "0123456789";
+  if (numbersDOM.checked == true && symbolsDOM.checked == true && uppercaseDOM.checked == false && lowercaseDOM.checked == false) chars = "0123456789!@#$%^&*()";
+  if (numbersDOM.checked == true && symbolsDOM.checked == false && uppercaseDOM.checked == true && lowercaseDOM.checked == false) chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  if (numbersDOM.checked == true && symbolsDOM.checked == true && uppercaseDOM.checked == true && lowercaseDOM.checked == false) chars = "0123456789!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  if (numbersDOM.checked == true && symbolsDOM.checked == true && uppercaseDOM.checked == true && lowercaseDOM.checked == true) chars = "0123456789!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  if (numbersDOM.checked == false && symbolsDOM.checked == true && uppercaseDOM.checked == true && lowercaseDOM.checked == false) chars = "!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  if (numbersDOM.checked == false && symbolsDOM.checked == true && uppercaseDOM.checked == false && lowercaseDOM.checked == false) chars = "!@#$%^&*()";
+  if (numbersDOM.checked == false && symbolsDOM.checked == false && uppercaseDOM.checked == true&& lowercaseDOM.checked == false) chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  if (numbersDOM.checked == true && symbolsDOM.checked == false && uppercaseDOM.checked == false && lowercaseDOM.checked == true) chars = "0123456789abcdefghijklmnopqrstuvwxyz";
+  if (numbersDOM.checked == false && symbolsDOM.checked == true && uppercaseDOM.checked == false && lowercaseDOM.checked == true) chars = "!@#$%^&*()abcdefghijklmnopqrstuvwxyz";
+  if (numbersDOM.checked == false && symbolsDOM.checked == false && uppercaseDOM.checked == true && lowercaseDOM.checked == true) chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  if (numbersDOM.checked == false && symbolsDOM.checked == false && uppercaseDOM.checked == false && lowercaseDOM.checked == true) chars = "abcdefghijklmnopqrstuvwxyz";
+  if (numbersDOM.checked == true && symbolsDOM.checked == true && uppercaseDOM.checked == false && lowercaseDOM.checked == true) chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()";
+  if (numbersDOM.checked == true && symbolsDOM.checked == false && uppercaseDOM.checked == true && lowercaseDOM.checked == true) chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  if (numbersDOM.checked == false && symbolsDOM.checked == true && uppercaseDOM.checked == false && lowercaseDOM.checked == true) chars = "!@#$%^&*()abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
   // if (symbolsDOM.checked) chars = "!@#$%^&*()";
   // if (uppercaseDOM.checked) chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var passwordLength = passwordlength.value;
