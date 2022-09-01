@@ -72,6 +72,15 @@ header {
   clear: both;
 }
 
+/* new added */
+.hide{
+  display:none;
+}
+
+.show{
+  display:block;
+}
+
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -86,6 +95,11 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+}
+
+/* Added in a hover style for the botton */
+.btn:hover {
+  background-color: rgb(231, 75, 75);
 }
 
 button[disabled] {
