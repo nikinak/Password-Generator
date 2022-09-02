@@ -72,13 +72,27 @@ header {
   clear: both;
 }
 
-/* new added */
+/* newly added - attached to criteria selection to show / hide when ggeneration is selected */
 .hide{
   display:none;
 }
 
 .show{
   display:block;
+  background-color: #ebebeb;
+  padding: 14px 34px;
+}
+
+/* styling for notes */
+.boldsmall{
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.redsmall{
+  margin-top: 3px;
+  color: rgb(184, 24, 24);
+  font-size: small;
 }
 
 .btn {
