@@ -6,7 +6,7 @@ Website to generate a random password based on input criteria.
 This website should be used to generate a random password given a set of character criterias and length. This code was developed with existing HTML, CSS, and Javascript provided - however, most Javascript was developed from scratch and edits were made to CSS and HTML for display purposes.
 
 Screenshot:
-![Alt text](./assets/screengrab.jpg?raw=true "Screen Shot of Webpage")
+![Alt text](./Assets/screengrab.jpg?raw=true "Screen Shot of Webpage")
 
 [Link][1] to portfolio page.
 
