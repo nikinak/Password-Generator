@@ -17,9 +17,9 @@ Screenshot:
 N/A
 
 ## Usage
-To generate a list of critera, the "generate password" button should be selected. This will show a list of character criteria and password length criteria. At least 1 box must be selected otherwise the user will be alerted, but beyond this any unique number of check boxes and criteria combiantions can be used. The user is also asked to provide a length for the password between 8 and 128 characters. If the user enters more or less than these numebrs then an alert is generated and the user must provide an in scope length for a password to be generated.
+To generate a list of criteria, the "generate password" button should be selected. This will show a list of character criteria and password length criteria. At least 1 box must be selected otherwise the user will be alerted, but beyond this any unique number of check boxes and criteria combinations can be used. The user is also asked to provide a length for the password between 8 and 128 characters. If the user enters more or less than these numbers then an alert is generated and the user must provide an in scope length for a password to be generated.
 
-Once criteria are sleected wihtin the acceptable parameters, then the user must select "Submit Criteria" which will generate a password. The submit criteria button can be presssed as many times and a new password meeting the same criteria will be generated. Criteria can be chnaged and the submit criteria button can be pressed again and the password generated will follow the new selected criteria.
+Once criteria are selected within the acceptable parameters, then the user must select "Submit Criteria" which will generate a password. The submit criteria button can be pressed as many times and a new password meeting the same criteria will be generated. Criteria can be changed and the submit criteria button can be pressed again and the password generated will follow the new selected criteria.
 
 ## Credits
 N/A
